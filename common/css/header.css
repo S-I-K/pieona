@@ -1,0 +1,81 @@
+@charset "UTF-8";
+/* 김성철고딕 */
+@font-face {
+  font-family: "KimjungchulGothic-Bold";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302_01@1.0/KimjungchulGothic-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+/* 에스코어드림 */
+@font-face {
+  font-family: "S-CoreDream-3Light";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+/* 둘기마요 */
+@font-face {
+  font-family: "Dovemayo-Medium";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.0/Dovemayo-Medium.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+/* 와구리체 */
+@font-face {
+  font-family: "WAGURITTF";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/2403@1.0/WAGURITTF.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+/* 런드리고딕 */
+@font-face {
+  font-family: "TTLaundryGothicB";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/2403-2@1.0/TTLaundryGothicB.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+/* variable css */
+header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 34px 28px 0 #E04883;
+  background: #EB6EA5;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+header .container {
+  justify-content: space-between;
+  padding: 24px 0;
+}
+header .container .logo-wrap .logo-box {
+  width: auto;
+  height: 50px;
+}
+header .container .logo-wrap .logo-box img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+header .container .category-wrap ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header .container .category-wrap ul li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header .container .category-wrap ul li a span {
+  font-family: "WAGURITTF";
+  font-size: 22px;
+  color: #fff;
+  line-height: 1;
+}
+header .container .category-wrap ul li:not(:last-child) {
+  margin-right: 100px;
+}

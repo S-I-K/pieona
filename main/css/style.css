@@ -1,0 +1,212 @@
+@charset "UTF-8";
+/* 김성철고딕 */
+/* @font-face {
+    font-family: 'KimjungchulGothic-Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302_01@1.0/KimjungchulGothic-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+} */
+@font-face {
+  font-family: "KimjungchulGothic-Light";
+  src: url("../../common/font/KimjungchulGothic-Light.ttf") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "KimjungchulGothic-Regular";
+  src: url("../../common/font/KimjungchulGothic-Regular.ttf") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "KimjungchulGothic-Bold";
+  src: url("../../common/font/KimjungchulGothic-Bold.ttf") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+/* 에스코어드림 */
+@font-face {
+  font-family: "S-CoreDream-3Light";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+/* 둘기마요 */
+@font-face {
+  font-family: "Dovemayo-Medium";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.0/Dovemayo-Medium.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+/* 와구리체 */
+@font-face {
+  font-family: "WAGURITTF";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/2403@1.0/WAGURITTF.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+/* 런드리고딕 */
+@font-face {
+  font-family: "TTLaundryGothicB";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/2403-2@1.0/TTLaundryGothicB.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+/* variable css */
+#wrap {
+  background: #EB6EA5;
+  min-height: 100vh;
+  padding-top: 180px;
+}
+#wrap section.visual-content-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#wrap section.visual-content-wrap .container {
+  flex-direction: column;
+  margin-bottom: 120px;
+}
+#wrap section.visual-content-wrap .container .text-box {
+  width: 100%;
+  height: auto;
+  margin-bottom: 34px;
+}
+#wrap section.visual-content-wrap .container .text-box h2.title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  line-height: 1.2;
+}
+#wrap section.visual-content-wrap .container .text-box h2.title span {
+  font-family: "WAGURITTF";
+  font-weight: normal;
+  font-size: 48px;
+  color: #fff;
+}
+#wrap section.visual-content-wrap .container .text-box h2.title span.point {
+  font-size: 68px;
+}
+#wrap section.visual-content-wrap .container .img-box {
+  width: 860px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#wrap section.visual-content-wrap .container .img-box img {
+  width: 100%;
+}
+#wrap section.program-content-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#wrap section.program-content-wrap .container .program-list-wrap {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+#wrap section.program-content-wrap .container .program-list-wrap .program-item-box {
+  width: 33.3333333333%;
+  padding: 0 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* title-box */
+  /* img-box */
+  /* text-box */
+  /* btn-box */
+}
+#wrap section.program-content-wrap .container .program-list-wrap .program-item-box .title-box {
+  margin-bottom: 34px;
+  width: 100%;
+}
+#wrap section.program-content-wrap .container .program-list-wrap .program-item-box .title-box h3.title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#wrap section.program-content-wrap .container .program-list-wrap .program-item-box .title-box h3.title .point-img-box {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 18px;
+}
+#wrap section.program-content-wrap .container .program-list-wrap .program-item-box .title-box h3.title .point-img-box img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#wrap section.program-content-wrap .container .program-list-wrap .program-item-box .title-box h3.title span {
+  font-family: "WAGURITTF";
+  font-weight: normal;
+  font-size: 24px;
+  color: #fff;
+  line-height: 1;
+}
+#wrap section.program-content-wrap .container .program-list-wrap .program-item-box .img-box {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  margin-bottom: 28px;
+}
+#wrap section.program-content-wrap .container .program-list-wrap .program-item-box .img-box img {
+  width: 100%;
+}
+#wrap section.program-content-wrap .container .program-list-wrap .program-item-box .text-box {
+  width: 100%;
+  margin-bottom: 42px;
+}
+#wrap section.program-content-wrap .container .program-list-wrap .program-item-box .text-box p {
+  white-space: pre-line;
+  text-align: center;
+  font-family: "KimjungchulGothic-Regular";
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.4;
+  color: #fff;
+}
+#wrap section.program-content-wrap .container .program-list-wrap .program-item-box .btn-box a {
+  background: #1BBCD9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 24px;
+}
+#wrap section.program-content-wrap .container .program-list-wrap .program-item-box .btn-box a span {
+  font-family: "KimjungchulGothic-Bold";
+  font-size: 18px;
+  color: #fff;
+}
+#wrap section.program-content-wrap .container .program-list-wrap .program-item-box:nth-child(1) {
+  /* img-box */
+  /* btn-box */
+}
+#wrap section.program-content-wrap .container .program-list-wrap .program-item-box:nth-child(1) .img-box img {
+  transform: scale(1.15);
+  transform-origin: 100% 100%;
+}
+#wrap section.program-content-wrap .container .program-list-wrap .program-item-box:nth-child(1) .btn-box a {
+  background: #1BBCD9;
+}
+#wrap section.program-content-wrap .container .program-list-wrap .program-item-box:nth-child(2) {
+  /* btn-box */
+}
+#wrap section.program-content-wrap .container .program-list-wrap .program-item-box:nth-child(2) .btn-box a {
+  background: #919EF9;
+}
+#wrap section.program-content-wrap .container .program-list-wrap .program-item-box:nth-child(3) {
+  /* btn-box */
+}
+#wrap section.program-content-wrap .container .program-list-wrap .program-item-box:nth-child(3) .btn-box a {
+  background: #F8B62D;
+}

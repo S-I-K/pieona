@@ -1,0 +1,59 @@
+@charset "UTF-8";
+/* 김성철고딕 */
+@font-face {
+  font-family: "KimjungchulGothic-Bold";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302_01@1.0/KimjungchulGothic-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+/* 에스코어드림 */
+@font-face {
+  font-family: "S-CoreDream-3Light";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+/* 둘기마요 */
+@font-face {
+  font-family: "Dovemayo-Medium";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.0/Dovemayo-Medium.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+/* 와구리체 */
+@font-face {
+  font-family: "WAGURITTF";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/2403@1.0/WAGURITTF.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+/* 런드리고딕 */
+@font-face {
+  font-family: "TTLaundryGothicB";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/2403-2@1.0/TTLaundryGothicB.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+/* variable css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul, ol, li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  width: 1440px;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
