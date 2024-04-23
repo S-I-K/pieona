@@ -1,8 +1,26 @@
 @charset "UTF-8";
 /* 김성철고딕 */
+/* @font-face {
+    font-family: 'KimjungchulGothic-Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302_01@1.0/KimjungchulGothic-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+} */
+@font-face {
+  font-family: "KimjungchulGothic-Light";
+  src: url("../../common/font/KimjungchulGothic-Light.ttf") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "KimjungchulGothic-Regular";
+  src: url("../../common/font/KimjungchulGothic-Regular.ttf") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
 @font-face {
   font-family: "KimjungchulGothic-Bold";
-  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302_01@1.0/KimjungchulGothic-Bold.woff2") format("woff2");
+  src: url("../../common/font/KimjungchulGothic-Bold.ttf") format("woff2");
   font-weight: 700;
   font-style: normal;
 }
@@ -35,3 +53,80 @@
   font-style: normal;
 }
 /* variable css */
+/* footer-section */
+footer {
+  /* border: 1px solid red; */
+  width: 100%;
+  height: 100px !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 2;
+}
+footer .container {
+  /* border: 1px solid red; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+footer .container span {
+  font-size: 14px;
+  letter-spacing: -0.8px;
+  line-height: 1;
+  color: #fff;
+  font-weight: 500;
+}
+footer .container a.back-top-btn {
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer .container a.back-top-btn span {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  transition: transform 0.2s ease-out;
+  transform-origin: 100% 0%;
+  position: relative;
+}
+footer .container a.back-top-btn span::before {
+  content: "Back Top";
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 100%;
+  height: 100%;
+  transition: transform 0.2s ease-out;
+}
+footer .container a.back-top-btn .arrow-icon-box {
+  margin-right: 14px;
+  width: 14px;
+  height: 14px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  background: url("/theme/new_dnc/img/main/arrow-img03-white.svg") no-repeat center top/100% auto;
+}
+footer .container a.back-top-btn .arrow-icon-box img {
+  width: 100%;
+  display: none;
+}
+footer .container a.back-top-btn:hover span {
+  transform: translateY(-100%);
+  transform-origin: 0% 0%;
+}
+footer .container span.copyrights {
+  text-align: center;
+}
+footer .container span.copyrights span {
+  font-family: "Poppins", sans-serif;
+}
+footer .container a.privacy span {
+  font-family: "KimjungchulGothic-Regular";
+}

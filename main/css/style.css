@@ -96,6 +96,7 @@
 }
 #wrap section.visual-content-wrap .container .img-box img {
   width: 100%;
+  pointer-events: none;
 }
 #wrap section.program-content-wrap {
   display: flex;
@@ -161,6 +162,7 @@
 }
 #wrap section.program-content-wrap .container .program-list-wrap .program-item-box .img-box img {
   width: 100%;
+  pointer-events: none;
 }
 #wrap section.program-content-wrap .container .program-list-wrap .program-item-box .text-box {
   width: 100%;
@@ -209,4 +211,92 @@
 }
 #wrap section.program-content-wrap .container .program-list-wrap .program-item-box:nth-child(3) .btn-box a {
   background: #F8B62D;
+}
+#wrap section.program-btn-content-wrap {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  position: relative;
+  background: #EB6EA5;
+}
+#wrap section.program-btn-content-wrap .bg-img-box {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+#wrap section.program-btn-content-wrap .bg-img-box img {
+  transform: translateY(6%);
+  width: 110%;
+  pointer-events: none;
+}
+#wrap section.program-btn-content-wrap .container {
+  position: absolute;
+  padding-bottom: 60px;
+}
+#wrap section.program-btn-content-wrap .container .btn-list-wrap {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+#wrap section.program-btn-content-wrap .container .btn-list-wrap a.btn-list-box {
+  width: 23%;
+  height: 330px;
+  border-radius: 34px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#wrap section.program-btn-content-wrap .container .btn-list-wrap a.btn-list-box .img-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 120px;
+  height: 120px;
+  margin-bottom: 14px;
+}
+#wrap section.program-btn-content-wrap .container .btn-list-wrap a.btn-list-box .img-box img {
+  width: 100%;
+  pointer-events: none;
+}
+#wrap section.program-btn-content-wrap .container .btn-list-wrap a.btn-list-box h2.program-title span {
+  font-family: "WAGURITTF";
+  font-weight: normal;
+  font-size: 28px;
+  color: #EB6EA5;
+}
+#wrap section.program-btn-content-wrap .container .btn-list-wrap .btn-list-box:nth-child(odd) {
+  background: #FFF883;
+  background: linear-gradient(0deg, rgb(255, 242, 76) 0%, rgb(255, 248, 131) 14%);
+}
+#wrap section.program-btn-content-wrap .container .btn-list-wrap .btn-list-box:nth-child(even) {
+  background: #FFFFFF;
+  background: linear-gradient(0deg, rgb(221, 222, 222) 0%, rgb(255, 255, 255) 14%);
+}
+#wrap section.program-btn-content-wrap .container .btn-list-wrap::before {
+  content: "";
+  display: flex;
+  width: 220px;
+  height: 220px;
+  background: url("../../main/img/list-ob-img01.png") no-repeat center center/contain;
+  position: absolute;
+  top: -45%;
+  left: -5%;
+}
+#wrap section.program-btn-content-wrap .container .btn-list-wrap::after {
+  content: "";
+  display: flex;
+  width: 220px;
+  height: 80px;
+  background: url("../../main/img/list-ob-img02.svg") no-repeat center center/contain;
+  position: absolute;
+  bottom: -14%;
+  right: -8%;
 }

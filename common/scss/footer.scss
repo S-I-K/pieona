@@ -1,7 +1,25 @@
 /* 김성철고딕 */
-@font-face {
+/* @font-face {
     font-family: 'KimjungchulGothic-Bold';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302_01@1.0/KimjungchulGothic-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+} */
+@font-face {
+    font-family: 'KimjungchulGothic-Light';
+    src: url('../../common/font/KimjungchulGothic-Light.ttf') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'KimjungchulGothic-Regular';
+    src: url('../../common/font/KimjungchulGothic-Regular.ttf') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'KimjungchulGothic-Bold';
+    src: url('../../common/font/KimjungchulGothic-Bold.ttf') format('woff2');
     font-weight: 700;
     font-style: normal;
 }
@@ -35,8 +53,96 @@
 }
 
 /* variable css */
-$font-kim: 'KimjungchulGothic-Bold';
+$font-kim-700: 'KimjungchulGothic-Bold';
+$font-kim-400: 'KimjungchulGothic-Regular';
+$font-kim-300: 'KimjungchulGothic-Light';
+$font-en: "Poppins", sans-serif;
 $font-score: 'S-CoreDream-3Light';
 $font-mayo: 'Dovemayo-Medium';
 $font-waguri: 'WAGURITTF';
 $font-laundry: 'TTLaundryGothicB';
+$color-main: #EB6EA5;
+$color-black: #2a2a2a;
+
+/* footer-section */
+footer {
+    /* border: 1px solid red; */
+    width: 100%;
+    height: 100px !important;
+    // margin-top: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 2;
+    .container {
+        /* border: 1px solid red; */
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        span {
+            font-size: 14px;
+            letter-spacing: -.8px;
+            line-height: 1;
+            color: #fff;
+            font-weight: 500;
+        }
+        a.back-top-btn {
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            span {
+                font-family: $font-en;
+                font-weight: 500;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 40px;
+                transition: transform 0.2s ease-out;
+                transform-origin: 100% 0%;
+                position: relative;
+            }
+            span::before {
+                content: 'Back Top';
+                position: absolute;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                top: 100%;
+                height: 100%;
+                transition: transform 0.2s ease-out;
+            }
+            .arrow-icon-box {
+                margin-right: 14px;
+                width: 14px;
+                height: 14px;
+                display: flex;
+                align-items: flex-start;
+                justify-content: center;
+                background: url('/theme/new_dnc/img/main/arrow-img03-white.svg') no-repeat center top / 100% auto;
+                img {
+                    width: 100%;
+                    display: none;
+                }
+            }
+        }
+        a.back-top-btn:hover {
+            span {
+                transform: translateY(-100%);
+                transform-origin: 0% 0%;
+            }
+        }
+        span.copyrights {
+            text-align: center;
+            span {
+                font-family: $font-en;
+            }
+        }
+        a.privacy {
+            span {
+                font-family: $font-kim-400;
+            }
+        }
+    }
+}

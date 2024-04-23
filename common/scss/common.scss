@@ -1,7 +1,25 @@
 /* 김성철고딕 */
-@font-face {
+/* @font-face {
     font-family: 'KimjungchulGothic-Bold';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302_01@1.0/KimjungchulGothic-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+} */
+@font-face {
+    font-family: 'KimjungchulGothic-Light';
+    src: url('../../common/font/KimjungchulGothic-Light.ttf') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'KimjungchulGothic-Regular';
+    src: url('../../common/font/KimjungchulGothic-Regular.ttf') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'KimjungchulGothic-Bold';
+    src: url('../../common/font/KimjungchulGothic-Bold.ttf') format('woff2');
     font-weight: 700;
     font-style: normal;
 }
@@ -35,11 +53,14 @@
 }
 
 /* variable css */
-$font-kim: 'KimjungchulGothic-Bold';
+$font-kim-700: 'KimjungchulGothic-Bold';
+$font-kim-400: 'KimjungchulGothic-Regular';
+$font-kim-300: 'KimjungchulGothic-Light';
 $font-score: 'S-CoreDream-3Light';
 $font-mayo: 'Dovemayo-Medium';
 $font-waguri: 'WAGURITTF';
 $font-laundry: 'TTLaundryGothicB';
+$color-main: #EB6EA5;
 
 
 * {

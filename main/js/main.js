@@ -1,0 +1,1 @@
+console.log('main/js/main.js connect');
