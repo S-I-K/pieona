@@ -68,6 +68,15 @@ a {
   color: inherit;
 }
 
+#wrap {
+  padding-top: 180px;
+}
+
+#wrap.sub-page {
+  padding-top: 90px;
+  background: url(../img/sub-page-background02.png) no-repeat center top/cover;
+}
+
 .container {
   width: 1440px;
   height: auto;

@@ -6,7 +6,7 @@
     <title>어린이날 피어나 축제</title>
 
     <!-- css -->
-    <link rel="stylesheet" href="./css/about.css">
+    <link rel="stylesheet" href="./css/location.css">
     <link rel="stylesheet" href="../common/css/common.css">
     <link rel="stylesheet" href="../common/css/header.css">
     <link rel="stylesheet" href="../common/css/footer.css">
@@ -128,61 +128,15 @@
                 <div class="title-box">
                     <h2>
                         <span>
-                            축제소개
+                            찾아오시는길
                         </span>
                     </h2>
                 </div>
 
                 <div class="content-box">
-                    <div class="program-poster-img-box">
-                        <img src="./img/program-thumb-img01.png" alt="">
-                    </div>
-
-                    <div class="program-detail-box">
-                        <h3 class="heading-txt">
-                            아이들의 상상력을 피워내는
-                            <span class="point-txt">
-                                5월 5일 어린이날 축제!
-                            </span>
-                        </h3>
-                        <h4>
-                            어린이의 꿈과 희망이 무럭무럭 자라나는 곳!<br/>
-                            다 함께 동심속으로 빠져볼까요?
-                        </h4>
+                    <!-- left -->
+                    <div class="location-detail-box">
                         <div class="table-box">
-                            <div class="row">
-                                <div class="table-head">
-                                    <span>
-                                        행
-                                    </span>
-                                    <span>
-                                        사
-                                    </span>
-                                    <span>
-                                        명
-                                    </span>
-                                </div>
-                                <div class="table-content">
-                                    <span>
-                                        2024 세종시 어린이날 피어나 축제
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="table-head">
-                                    <span>
-                                        일
-                                    </span>
-                                    <span>
-                                        시
-                                    </span>
-                                </div>
-                                <div class="table-content">
-                                    <span>
-                                        2024.05.05.(일), 09:30 ~ 16:00
-                                    </span>
-                                </div>
-                            </div>
                             <div class="row">
                                 <div class="table-head">
                                     <span>
@@ -201,28 +155,68 @@
                             <div class="row">
                                 <div class="table-head">
                                     <span>
-                                        프로그램
+                                        주
+                                    </span>
+                                    <span>
+                                        소
                                     </span>
                                 </div>
                                 <div class="table-content">
                                     <span>
-                                        공연, 체험프로그램, 먹거리존
+                                        세종 다솜로 216
                                     </span>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="table-head">
                                     <span>
-                                        주최·주관
+                                        문
+                                    </span>
+                                    <span>
+                                        의
                                     </span>
                                 </div>
                                 <div class="table-content">
                                     <span>
-                                        세종특별자치시청
+                                        070-7039-4373
                                     </span>
                                 </div>
                             </div>
                         </div>
+
+                        <div class="map-btn-box">
+                            <a href="https://kko.to/l7zOHqnUkv" target="_blank" class="naver">
+                                <span>
+                                    네이버 지도
+                                </span>
+                            </a>
+                            <a href="https://naver.me/5lxKp2mq" target="_blank" class="kakao">
+                                <span>
+                                    카카오 지도
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- right -->
+                    <div class="location-map-box">
+                        <!-- * 카카오맵 - 지도퍼가기 -->
+                        <!-- 1. 지도 노드 -->
+                        <div id="daumRoughmapContainer1714465653341" class="root_daum_roughmap root_daum_roughmap_landing"></div>
+                        <!--
+                            2. 설치 스크립트
+                            * 지도 퍼가기 서비스를 2개 이상 넣을 경우, 설치 스크립트는 하나만 삽입합니다.
+                        -->
+                        <script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+                        <!-- 3. 실행 스크립트 -->
+                        <script charset="UTF-8">
+                            new daum.roughmap.Lander({
+                                "timestamp" : "1714465653341",
+                                "key" : "2j7hv",
+                                "mapWidth" : "",
+                                "mapHeight" : ""
+                            }).render();
+                        </script>
                     </div>
                 </div>
             </div>

@@ -379,31 +379,54 @@ $color-black: #2a2a2a;
                 width: 100%;
                 background: #fff;
                 border-radius: 28px;
-                padding: 40px 60px;
+                padding: 0px 80px;
                 display: flex;
+                flex-direction: column;
                 align-items: center;
-                justify-content: space-between;
+                justify-content: flex-start;
 
                 .event-list-box {
                     width: 100%;
                     display: flex;
                     align-items: center;
                     justify-content: space-between;
+                    padding: 140px 0;
+                    position: relative;
                     .event-thumb-box {
                         width: 40%;
-                        border: 1px solid red;
+                        // border: 1px solid red;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        position: relative;
                         img {
                             width: 100%;
+                            pointer-events: none;
                         }
+                    }
+                    .event-thumb-box::before {
+                        content: '';
+                        font-family: $font-laundry;
+                        font-size: 34px;
+                        line-height: 1;
+                        letter-spacing: -.8px;
+                        color: $color-black;
+                        display: block;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
                     }
 
                     .event-detail-box {
                         width: 50%;
-                        border: 1px solid red;
+                        // border: 1px solid red;
                         .event-title-box {
                             margin-bottom: 40px;
                             h2.title {
                                 margin-bottom: 20px;
+                                position: relative;
+                                display: flex;
+                                align-items: center;
                                 span {
                                     font-family: $font-waguri;
                                     font-weight: normal;
@@ -412,6 +435,15 @@ $color-black: #2a2a2a;
                                     letter-spacing: -.8px;
                                     line-height: 1.3;
                                 }
+                            }
+                            h2.title::before {
+                                content: '';
+                                display: block;
+                                width: 38px;
+                                height: 38px;
+                                background: url('../../common/img/title-point-img.svg') no-repeat center center / contain;
+                                position: absolute;
+                                left: -58px;
                             }
                             p.desc {
                                 font-family: $font-waguri;
@@ -448,9 +480,9 @@ $color-black: #2a2a2a;
                                     }
                                 }
                                 li:not(:last-child) {
-
+                                    margin-bottom: 14px;
                                 }
-                                li:not(:last-child)::after {
+                                li.dot::after {
                                     content: '';
                                     display: block;
                                     width: 3px;
@@ -462,17 +494,80 @@ $color-black: #2a2a2a;
                                     left: 0;
                                 }
                                 li:last-child {
-                                    display: flex;
-                                    flex-direction: column;
                                     span {
 
                                     }
                                 }
+                                li.notice {
+                                    display: flex;
+                                    flex-direction: column;
+                                    align-self: flex-start;
+                                    justify-content: center;
+                                    color: #000;
+                                    background: #EFEFEF;
+                                    border-radius: 14px;
+                                    padding: 8px 24px;
+                                    span {
+                                        font-size: 14px;
+                                        line-height: 1.5;
+                                    }
+                                }
+                                li.notice.border-radius300 {
+                                    border-radius: 300px;
+                                }
                             }
                             ul:not(:last-child) {
-                                margin-bottom: 20px;
+                                margin-bottom: 24px;
                             }
                         }
+                    }
+                }
+                .event-list-box:not(:last-child) {
+                    border-bottom: 2px dashed $color-black;
+                }
+                .event-list-box:nth-child(1) {
+                    .event-thumb-box::before {
+                        content: '하나!';
+                    }
+                }
+                .event-list-box:nth-child(1)::after {
+                    content: '';
+                    display: block;
+                    width: 130px;
+                    height: 130px;
+                    position: absolute;
+                    right: -30px;
+                    bottom: 40px;
+                    background: url('../img/event-ob-img01.png') no-repeat center center / contain;
+                }
+                .event-list-box:nth-child(2) {
+                    .event-thumb-box::before {
+                        content: '둘!';
+                    }
+                }
+                .event-list-box:nth-child(2)::before {
+                    content: '';
+                    display: block;
+                    width: 160px;
+                    height: 160px;
+                    position: absolute;
+                    left: -14px;
+                    bottom: -26px;
+                    background: url('../img/event-ob-img02.png') no-repeat center center / contain;
+                }
+                .event-list-box:nth-child(2)::after {
+                    content: '';
+                    display: block;
+                    width: 220px;
+                    height: 220px;
+                    position: absolute;
+                    right: -60px;
+                    bottom: -90px;
+                    background: url('../img/event-ob-img03.png') no-repeat center center / contain;
+                }
+                .event-list-box:nth-child(3) {
+                    .event-thumb-box::before {
+                        content: '셋!';
                     }
                 }
             }

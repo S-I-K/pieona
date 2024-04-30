@@ -22,14 +22,16 @@
     <script src="../common/js/common.js"></script>
 </head>
 <body>
-    <div id="wrap">
+    <div id="wrap" class="sub-page">
         <!-- header -->
         <header>
             <div class="container">
                 <!-- logo-wrap -->
                 <div class="logo-wrap">
                     <div class="logo-box">
-                        <img src="../common/img/logo.svg" alt="">
+                        <a href="/">
+                            <img src="../common/img/logo.svg" alt="">
+                        </a>
                     </div>
                 </div>
 
@@ -42,6 +44,15 @@
                                     축제소개
                                 </span>
                             </a>
+                            <ul class='down-menu'>
+                                <li>
+                                    <a href="/about/">
+                                        <span>
+                                            피어나 축제소개
+                                        </span>
+                                    </a>
+                                </li>
+                            </ul>
                         </li>
                         <li>
                             <a href="#">
@@ -49,6 +60,22 @@
                                     행사안내
                                 </span>
                             </a>
+                            <ul class='down-menu'>
+                                <li>
+                                    <a href="/program/">
+                                        <span>
+                                            프로그램 안내
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/program/event.php">
+                                        <span>
+                                            이벤트
+                                        </span>
+                                    </a>
+                                </li>
+                            </ul>
                         </li>
                         <li>
                             <a href="#">
@@ -56,6 +83,15 @@
                                     오시는길
                                 </span>
                             </a>
+                            <ul class='down-menu'>
+                                <li>
+                                    <a href="#">
+                                        <span>
+                                            자동차/대중교통
+                                        </span>
+                                    </a>
+                                </li>
+                            </ul>
                         </li>
                         <li>
                             <a href="#">
@@ -63,6 +99,15 @@
                                     공지사항
                                 </span>
                             </a>
+                            <ul class='down-menu'>
+                                <li>
+                                    <a href="#">
+                                        <span>
+                                            공지사항
+                                        </span>
+                                    </a>
+                                </li>
+                            </ul>
                         </li>
                     </ul>
                 </div>
@@ -89,6 +134,7 @@
                 </div>
 
                 <div class="content-box">
+                    <!-- 01 -->
                     <div class="event-list-box">
                         <!-- left -->
                         <div class="event-thumb-box">
@@ -113,7 +159,7 @@
                                     <span class="heading-txt">
                                         스탬프 판 수령하기!
                                     </span>
-                                    <li>
+                                    <li class="dot">
                                         <span>
                                             리플렛에 인쇄된 스탬프판을 확인 후 첫번째 장소로 이동한다.
                                         </span>
@@ -123,12 +169,12 @@
                                     <span class="heading-txt">
                                         미션 수행하기!
                                     </span>
-                                    <li>
+                                    <li class="dot">
                                         <span>
                                             지정된 장소에서 미션 수행 후 스탬프를 받아주세요.
                                         </span>
                                     </li>
-                                    <li>
+                                    <li class="notice border-radius300">
                                         <span>
                                             ※ 스탬프는 1인 1개만 수령 가능합니다.
                                         </span>
@@ -138,13 +184,13 @@
                                     <span class="heading-txt">
                                         어린이날 상품 받기!
                                     </span>
-                                    <li>
+                                    <li class="dot">
                                         <span>
                                             스탬프를 9개 모두 모아온 어린이에게 상품을 드립니다.<br/>
                                             스탬프를 모두 모은 후 운영사무국으로 인증해주세요.
                                         </span>
                                     </li>
-                                    <li>
+                                    <li class="notice">
                                         <span>
                                             ※ 선착순으로 진행되며, 소진 시 행사가 종료됩니다.
                                         </span>
@@ -155,6 +201,96 @@
                                             ※ 운영사무국에 스탬프 판을 인증하지 않은 경우에는 상품 지급이 어렵습니다.
                                         </span>
                                     </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 02 -->
+                    <div class="event-list-box">
+                        <!-- left -->
+                        <div class="event-thumb-box">
+                            <img src="./img/event-thumb-img02.png" alt="">
+                        </div>
+                        <!-- right -->
+                        <div class="event-detail-box">
+                            <div class="event-title-box">
+                                <h2 class="title">
+                                    <span>
+                                        어린이 퍼레이드 이벤트
+                                    </span>
+                                </h2>
+                                <p class="desc">
+                                    오늘의 주인공은 바로 나!<br/>
+                                    퍼레이드에 참여할 어린이 100명을 모집합니다!
+                                </p>
+                            </div>
+
+                            <div class="event-guide-wrap">
+                                <ul>
+                                    <span class="heading-txt">
+                                        퍼레이드 참여 신청하기!
+                                    </span>
+                                    <li class="dot">
+                                        <span>
+                                            퍼레이드 참여 신청 구글폼에 신청 정보를 입력해주세요.
+                                        </span>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <span class="heading-txt">
+                                        코스프레 복장 준비하기!
+                                    </span>
+                                    <li class="notice border-radius300">
+                                        <span>
+                                            ※ 사무국에서는 별도의 의상을 제공하지 않습니다.
+                                        </span>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <span class="heading-txt">
+                                        어린이날 상품 받기!
+                                    </span>
+                                    <li class="dot">
+                                        <span>
+                                            퍼레이드 종료 후 피어나 포토존에서 인증샷을 남겨주세요.<br/>
+                                            촬영 후 SNS에 업로드하면 스탬프 이벤트에 참여할 수 있습니다.
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 03 -->
+                    <div class="event-list-box">
+                        <!-- left -->
+                        <div class="event-thumb-box">
+                            <img src="./img/event-thumb-img03.png" alt="">
+                        </div>
+                        <!-- right -->
+                        <div class="event-detail-box">
+                            <div class="event-title-box">
+                                <h2 class="title">
+                                    <span>
+                                        만족도 조사 참여 이벤트
+                                    </span>
+                                </h2>
+                                <p class="desc">
+                                    2024 세종시 어린이날 피어나 축제 종료 후<br/>
+                                    만족도 조사에 참여해주세요!
+                                </p>
+                            </div>
+
+                            <div class="event-guide-wrap">
+                                <ul>
+                                    <span class="heading-txt">
+                                        행사 종료 후 피어나 축제 만족도 조사 설문폼에<br/>
+                                        응답 후 정보를 남기면, 응모 완료!
+                                    </span>
+                                    <span class="heading-txt">
+                                        조사 종료 후 7일 이내에 추첨을 통해 기프티콘을 드립니다.
+                                    </span>
                                 </ul>
                             </div>
                         </div>

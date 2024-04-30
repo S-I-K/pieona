@@ -55,9 +55,9 @@
 /* variable css */
 header {
   width: 100%;
-  height: 100px;
+  height: 90px;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   box-shadow: 0 14px 24px 0 #E04883;
   background: #EB6EA5;
@@ -65,10 +65,11 @@ header {
   top: 0;
   left: 0;
   z-index: 999;
-  transition: all 0.4s ease;
+  transition: 0.8s all ease;
 }
 header .container {
   justify-content: space-between;
+  padding: 20px 0;
 }
 header .container .logo-wrap .logo-box {
   width: auto;
@@ -85,7 +86,14 @@ header .container .category-wrap ul {
   align-items: center;
   justify-content: center;
 }
+header .container .category-wrap ul li {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 header .container .category-wrap ul li a {
+  width: 140px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -96,10 +104,41 @@ header .container .category-wrap ul li a span {
   color: #fff;
   line-height: 1;
 }
+header .container .category-wrap ul li ul.down-menu {
+  position: absolute;
+  top: 56px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+  opacity: 0;
+  transition: all 0.4s ease;
+}
+header .container .category-wrap ul li ul.down-menu li a {
+  padding: 16px 0;
+}
+header .container .category-wrap ul li ul.down-menu li a span {
+  font-size: 16px;
+  font-family: "KimjungchulGothic-Regular";
+}
+header .container .category-wrap ul li ul.down-menu li:not(:last-child) {
+  margin: 0;
+}
 header .container .category-wrap ul li:not(:last-child) {
-  margin-right: 100px;
+  margin-right: 80px;
 }
 
 header.header-hide {
   top: -160px;
+}
+
+header:hover {
+  height: 240px;
+}
+header:hover .container .category-wrap ul li ul.down-menu {
+  pointer-events: unset;
+  opacity: 1;
+  transition: all 0.4s ease;
 }
