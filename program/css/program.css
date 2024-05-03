@@ -117,7 +117,7 @@
   height: 28px;
   position: absolute;
   left: -48px;
-  background: url(../../common/img/sub-page-title-ob01.svg) no-repeat center center/contain;
+  background: url("../../common/img/sub-page-title-ob01.svg") no-repeat center center/contain;
 }
 #wrap .program-table-content-wrap .container .title-box h2 span::after {
   content: "";
@@ -126,7 +126,7 @@
   height: 28px;
   position: absolute;
   right: -48px;
-  background: url(../../common/img/sub-page-title-ob01.svg) no-repeat center center/contain;
+  background: url("../../common/img/sub-page-title-ob01.svg") no-repeat center center/contain;
 }
 #wrap .program-table-content-wrap .container .content-box {
   width: 100%;
@@ -322,7 +322,7 @@
   height: 28px;
   position: absolute;
   left: -48px;
-  background: url(../../common/img/sub-page-title-ob01.svg) no-repeat center center/contain;
+  background: url("../../common/img/sub-page-title-ob01.svg") no-repeat center center/contain;
 }
 #wrap .program-event-content-wrap .container .title-box h2 span::after {
   content: "";
@@ -331,7 +331,7 @@
   height: 28px;
   position: absolute;
   right: -48px;
-  background: url(../../common/img/sub-page-title-ob01.svg) no-repeat center center/contain;
+  background: url("../../common/img/sub-page-title-ob01.svg") no-repeat center center/contain;
 }
 #wrap .program-event-content-wrap .container .content-box {
   width: 100%;
@@ -432,6 +432,7 @@
   color: #2a2a2a;
   font-family: "KimjungchulGothic-Light";
   font-weight: 700;
+  font-size: 16px;
 }
 #wrap .program-event-content-wrap .container .content-box .event-list-box .event-detail-box .event-guide-wrap ul li:not(:last-child) {
   margin-bottom: 14px;
@@ -534,4 +535,128 @@
 }
 #wrap footer .container a.privacy span {
   color: #2a2a2a;
+}
+
+@media (max-width: 450px) {
+  #wrap .program-table-content-wrap .container .title-box {
+    margin-bottom: 24px;
+  }
+  #wrap .program-table-content-wrap .container .title-box h2 span {
+    font-size: 24px;
+  }
+  #wrap .program-table-content-wrap .container .title-box h2 span::before {
+    width: 16px;
+    height: 16px;
+    left: -28px;
+  }
+  #wrap .program-table-content-wrap .container .title-box h2 span::after {
+    width: 16px;
+    height: 16px;
+    right: -28px;
+  }
+  #wrap .program-table-content-wrap .container .content-box {
+    padding: 40px 40px;
+  }
+  #wrap .program-table-content-wrap .container .content-box .table-box table tr th span {
+    font-size: 14px;
+  }
+  #wrap .program-table-content-wrap .container .content-box .table-box table tr td span {
+    font-size: 14px;
+  }
+  #wrap .program-table-content-wrap .container .content-box .table-box table tr td ul li span {
+    font-size: 14px;
+  }
+  #wrap .program-table-content-wrap .container .content-box .table-box table tr td.ob-img01::after {
+    display: none;
+  }
+  #wrap .program-table-content-wrap .container .content-box .table-box table tr td.ob-img02::after {
+    display: none;
+  }
+  #wrap .program-table-content-wrap .container .content-box .table-box table tr td.ob-img02::before {
+    display: none;
+  }
+  #wrap .program-table-content-wrap .container .content-box .table-box table tr td.ob-img03::after {
+    display: none;
+  }
+  #wrap .program-table-content-wrap .container .content-box .table-box table tr td.ob-img04::after {
+    display: none;
+  }
+  #wrap .program-table-content-wrap .container .content-box .table-box table tr td.ob-img05::after {
+    display: none;
+  }
+  #wrap .program-table-content-wrap .container .content-box .table-box table tr td.ob-img05::before {
+    display: none;
+  }
+  #wrap .program-table-content-wrap .container .content-box .table-box table tr td.ob-img06::after {
+    display: none;
+  }
+  #wrap .program-event-content-wrap .container .title-box {
+    margin-bottom: 24px;
+  }
+  #wrap .program-event-content-wrap .container .title-box h2 span {
+    font-size: 24px;
+  }
+  #wrap .program-event-content-wrap .container .title-box h2 span::before {
+    width: 16px;
+    height: 16px;
+    left: -28px;
+  }
+  #wrap .program-event-content-wrap .container .title-box h2 span::after {
+    width: 16px;
+    height: 16px;
+    right: -28px;
+  }
+  #wrap .program-event-content-wrap .container .content-box {
+    padding: 0px 40px;
+  }
+  #wrap .program-event-content-wrap .container .content-box .event-list-box {
+    flex-direction: column;
+    padding: 40px 0;
+  }
+  #wrap .program-event-content-wrap .container .content-box .event-list-box .event-thumb-box {
+    width: 100%;
+  }
+  #wrap .program-event-content-wrap .container .content-box .event-list-box .event-detail-box {
+    width: 100%;
+  }
+  #wrap .program-event-content-wrap .container .content-box .event-list-box .event-detail-box .event-title-box h2.title {
+    justify-content: center;
+  }
+  #wrap .program-event-content-wrap .container .content-box .event-list-box .event-detail-box .event-title-box h2.title span {
+    font-size: 24px;
+  }
+  #wrap .program-event-content-wrap .container .content-box .event-list-box .event-detail-box .event-title-box p.desc {
+    font-size: 18px;
+    text-align: center;
+  }
+  #wrap .program-event-content-wrap .container .content-box .event-list-box .event-detail-box .event-guide-wrap ul span.heading-txt {
+    font-size: 16px;
+  }
+  #wrap .program-event-content-wrap .container .content-box .event-list-box .event-detail-box .event-guide-wrap ul li span {
+    font-size: 14px;
+  }
+  #wrap .program-event-content-wrap .container .content-box .event-list-box:not(:last-child) {
+    border-bottom: 1px dashed #2a2a2a;
+  }
+  #wrap .program-event-content-wrap .container .content-box .event-list-box:nth-child(1) .event-thumb-box::before {
+    content: "하나!";
+  }
+  #wrap .program-event-content-wrap .container .content-box .event-list-box:nth-child(1)::after {
+    display: none;
+  }
+  #wrap .program-event-content-wrap .container .content-box .event-list-box:nth-child(2) .event-thumb-box::before {
+    content: "둘!";
+  }
+  #wrap .program-event-content-wrap .container .content-box .event-list-box:nth-child(2)::before {
+    display: none;
+  }
+  #wrap .program-event-content-wrap .container .content-box .event-list-box:nth-child(2)::after {
+    display: none;
+  }
+  #wrap .program-event-content-wrap .container .content-box .event-list-box:nth-child(3) .event-thumb-box::before {
+    content: "셋!";
+  }
+  #wrap .page-background-box {
+    display: none;
+  }
 }

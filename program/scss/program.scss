@@ -144,7 +144,7 @@ $color-black: #2a2a2a;
                         height: 28px;
                         position: absolute;
                         left: -48px;
-                        background: url(../../common/img/sub-page-title-ob01.svg) no-repeat center center / contain ;
+                        background: url('../../common/img/sub-page-title-ob01.svg') no-repeat center center / contain ;
                     }
                     span::after {
                         content: '';
@@ -153,7 +153,7 @@ $color-black: #2a2a2a;
                         height: 28px;
                         position: absolute;
                         right: -48px;
-                        background: url(../../common/img/sub-page-title-ob01.svg) no-repeat center center / contain ;
+                        background: url('../../common/img/sub-page-title-ob01.svg') no-repeat center center / contain ;
                     }
                 }
             }
@@ -361,7 +361,7 @@ $color-black: #2a2a2a;
                         height: 28px;
                         position: absolute;
                         left: -48px;
-                        background: url(../../common/img/sub-page-title-ob01.svg) no-repeat center center / contain ;
+                        background: url('../../common/img/sub-page-title-ob01.svg') no-repeat center center / contain ;
                     }
                     span::after {
                         content: '';
@@ -370,7 +370,7 @@ $color-black: #2a2a2a;
                         height: 28px;
                         position: absolute;
                         right: -48px;
-                        background: url(../../common/img/sub-page-title-ob01.svg) no-repeat center center / contain ;
+                        background: url('../../common/img/sub-page-title-ob01.svg') no-repeat center center / contain ;
                     }
                 }
             }
@@ -477,6 +477,7 @@ $color-black: #2a2a2a;
                                         color: $color-black;
                                         font-family: $font-kim-300;
                                         font-weight: 700;
+                                        font-size: 16px;
                                     }
                                 }
                                 li:not(:last-child) {
@@ -620,6 +621,216 @@ $color-black: #2a2a2a;
                     color: $color-black;
                 }
             }
+        }
+    }
+}
+
+
+@media ( max-width: 450px ) {
+    #wrap {
+        .program-table-content-wrap {
+            .container {
+                .title-box {
+                    margin-bottom: 24px;
+                    h2 {
+                        span {
+                            font-size: 24px;
+                        }
+                        span::before {
+                            width: 16px;
+                            height: 16px;
+                            left: -28px;
+                        }
+                        span::after {
+                            width: 16px;
+                            height: 16px;
+                            right: -28px;
+                        }
+                    }
+                }
+    
+                .content-box {
+                    padding: 40px 40px;
+                    .table-box {
+                        table {
+                            tr {
+                                th {
+                                    span {
+                                        font-size: 14px;
+                                    }
+                                }
+                                th:first-child {
+                                }
+                                th:last-child {
+                                }
+                                td {
+                                    span {
+                                        font-size: 14px;
+                                    }
+                                    span.point-color {
+                                    }
+                                    span:not(:last-child) {
+                                    }
+    
+                                    ul {
+                                        li {
+                                            span {
+                                                font-size: 14px;
+                                            }
+                                            span::after {
+                                            }
+                                        }
+                                    }
+                                }
+                                td:first-child {
+                                }
+                                td.ob-img01::after {
+                                    display: none;
+                                }
+                                td.ob-img02::after {
+                                    display: none;
+                                }
+                                td.ob-img02::before {
+                                    display: none;
+                                }
+                                td.ob-img03::after {
+                                    display: none;
+                                }
+                                td.ob-img04::after {
+                                    display: none;
+                                }
+                                td.ob-img05::after {
+                                    display: none;
+                                }
+                                td.ob-img05::before {
+                                    display: none;
+                                }
+                                td.ob-img06::after {
+                                    display: none;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .program-event-content-wrap {
+            .container {
+                .title-box {
+                    margin-bottom: 24px;
+                    h2 {
+                        span {
+                            font-size: 24px;
+                        }
+                        span::before {
+                            width: 16px;
+                            height: 16px;
+                            left: -28px;
+                        }
+                        span::after {
+                            width: 16px;
+                            height: 16px;
+                            right: -28px;
+                        }
+                    }
+                }
+    
+                .content-box {
+                    padding: 0px 40px;
+    
+                    .event-list-box {
+                        flex-direction: column;
+                        padding: 40px 0;
+                        .event-thumb-box {
+                            width: 100%;
+                            img {
+                            }
+                        }
+                        .event-thumb-box::before {
+                        }
+    
+                        .event-detail-box {
+                            width: 100%;
+                            .event-title-box {
+                                h2.title {
+                                    justify-content: center;
+                                    span {
+                                        font-size: 24px;
+                                    }
+                                }
+                                h2.title::before {
+                                }
+                                p.desc {
+                                    font-size: 18px;
+                                    text-align: center;
+                                }
+                            }
+    
+                            .event-guide-wrap {
+                                ul {
+                                    span.heading-txt {
+                                        font-size: 16px;
+                                    }
+                                    li {
+                                        span {
+                                            font-size: 14px;
+                                        }
+                                    }
+                                    li:not(:last-child) {
+                                    }
+                                    li.dot::after {
+                                    }
+                                    li:last-child {
+                                        span {
+    
+                                        }
+                                    }
+                                    li.notice {
+                                        span {
+                                        }
+                                    }
+                                    li.notice.border-radius300 {
+                                    }
+                                }
+                                ul:not(:last-child) {
+                                }
+                            }
+                        }
+                    }
+                    .event-list-box:not(:last-child) {
+                        border-bottom: 1px dashed $color-black;
+                    }
+                    .event-list-box:nth-child(1) {
+                        .event-thumb-box::before {
+                            content: '하나!';
+                        }
+                    }
+                    .event-list-box:nth-child(1)::after {
+                        display: none;
+                    }
+                    .event-list-box:nth-child(2) {
+                        .event-thumb-box::before {
+                            content: '둘!';
+                        }
+                    }
+                    .event-list-box:nth-child(2)::before {
+                        display: none;
+                    }
+                    .event-list-box:nth-child(2)::after {
+                        display: none;
+                    }
+                    .event-list-box:nth-child(3) {
+                        .event-thumb-box::before {
+                            content: '셋!';
+                        }
+                    }
+                }
+            }
+        }
+
+        .page-background-box {
+            display: none;
         }
     }
 }

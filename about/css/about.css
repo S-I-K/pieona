@@ -116,7 +116,7 @@
   height: 28px;
   position: absolute;
   left: -48px;
-  background: url("../../theme/pieona/common/img/sub-page-title-ob01.svg") no-repeat center center/contain;
+  background: url("../../common/img/sub-page-title-ob01.svg") no-repeat center center/contain;
 }
 #wrap .program-about-content-wrap .container .title-box h2 span::after {
   content: "";
@@ -125,7 +125,7 @@
   height: 28px;
   position: absolute;
   right: -48px;
-  background: url("../../theme/pieona/common/img/sub-page-title-ob01.svg") no-repeat center center/contain;
+  background: url("../../common/img/sub-page-title-ob01.svg") no-repeat center center/contain;
 }
 #wrap .program-about-content-wrap .container .content-box {
   width: 100%;
