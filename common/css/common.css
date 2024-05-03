@@ -84,3 +84,13 @@ a {
   align-items: center;
   justify-content: center;
 }
+
+@media (max-width: 450px) {
+  #wrap.sub-page {
+    padding-top: 72px;
+  }
+  .container {
+    width: 100%;
+    padding: 0 16px;
+  }
+}

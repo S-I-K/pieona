@@ -146,3 +146,39 @@ footer {
         }
     }
 }
+
+@media ( max-width: 450px ) {
+    footer {
+        height: auto !important;
+        padding: 50px 14px 40px;
+        position: relative;
+        .container {
+            flex-direction: column;
+            a.back-top-btn {
+                position: absolute;
+                top: 14px;
+                .arrow-icon-box {
+                    display: flex;
+                    margin: 0;
+
+                    img {
+                    }
+                }
+                span {
+                    display: none !important;
+                }
+            }
+            span.copyrights {
+                margin-bottom: 20px;
+                span {
+
+                }
+            }
+            a.privacy {
+                span {
+                    
+                }
+            }
+        }
+    }
+}

@@ -130,3 +130,28 @@ footer .container span.copyrights span {
 footer .container a.privacy span {
   font-family: "KimjungchulGothic-Regular";
 }
+
+@media (max-width: 450px) {
+  footer {
+    height: auto !important;
+    padding: 50px 14px 40px;
+    position: relative;
+  }
+  footer .container {
+    flex-direction: column;
+  }
+  footer .container a.back-top-btn {
+    position: absolute;
+    top: 14px;
+  }
+  footer .container a.back-top-btn .arrow-icon-box {
+    display: flex;
+    margin: 0;
+  }
+  footer .container a.back-top-btn span {
+    display: none !important;
+  }
+  footer .container span.copyrights {
+    margin-bottom: 20px;
+  }
+}
