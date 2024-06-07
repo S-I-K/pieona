@@ -144,7 +144,7 @@ $color-black: #2a2a2a;
                         height: 28px;
                         position: absolute;
                         left: -48px;
-                        background: url(../../common/img/sub-page-title-ob01.svg) no-repeat center center / contain ;
+                        background: url('../../theme/pieona/common/img/sub-page-title-ob01.svg') no-repeat center center / contain ;
                     }
                     span::after {
                         content: '';
@@ -153,7 +153,7 @@ $color-black: #2a2a2a;
                         height: 28px;
                         position: absolute;
                         right: -48px;
-                        background: url(../../common/img/sub-page-title-ob01.svg) no-repeat center center / contain ;
+                        background: url('../../theme/pieona/common/img/sub-page-title-ob01.svg') no-repeat center center / contain ;
                     }
                 }
             }
@@ -203,7 +203,7 @@ $color-black: #2a2a2a;
                                 display: block;
                                 width: 18px;
                                 height: 18px;
-                                background: url(../../common/img/title-point-img.svg) no-repeat center center / contain;
+                                background: url('../../theme/pieona/common/img/title-point-img.svg') no-repeat center center / contain;
                                 position: absolute;
                                 left: -48%;
                             }
@@ -318,6 +318,104 @@ $color-black: #2a2a2a;
                     color: $color-black;
                 }
             }
+        }
+    }
+}
+
+@media ( max-width: 450px ) {
+    #wrap {
+        .program-about-content-wrap {
+            .container {
+                .title-box {
+                    margin-bottom: 24px;
+                    h2 {
+                        span {
+                            font-size: 24px;
+                        }
+                        span::before {
+                            width: 16px;
+                            height: 16px;
+                            left: -28px;
+                        }
+                        span::after {
+                            width: 16px;
+                            height: 16px;
+                            right: -28px;
+                        }
+                    }
+                }
+    
+                .content-box {
+                    padding: 40px 40px;
+                    flex-direction: column;
+                    .location-detail-box {
+                        width: 100%;
+                        order: 2;
+                        align-items: center;
+                        .table-box {
+                            margin-bottom: 40px;
+                            .row {
+                                padding: 8px 0;
+                                padding-left: 28px;
+                                border-bottom: 1px dashed #40220F;
+                                .table-head {
+                                    width: 64px;
+                                    justify-content: flex-start;
+                                    margin-right: 24px;
+                                    span {
+                                        font-size: 16px;
+                                    }
+                                }
+                                .table-head::after {
+                                    width: 14px;
+                                    height: 14px;
+                                    left: -34%;
+                                }
+                                .table-content {
+                                    span {
+                                        font-size: 16px;
+                                    }
+                                }
+                            }
+                        }
+    
+                        .map-btn-box {
+                            flex-direction: row;
+                            a {
+                                padding: 16px 22px;
+                                span {
+                                    font-size: 14px;
+                                }
+                            }
+                            a.kakao {
+                            }
+                            a.naver {
+                            }
+                            a:not(:last-child) {
+                                margin: 0;
+                                margin-right: 14px;
+                            }
+                        }
+                    }
+                    .location-detail-box::after {
+                        display: none;
+                    }
+    
+                    .location-map-box {
+                        width: 100%;
+                        height: 300px;
+                        margin-bottom: 60px;
+                        .root_daum_roughmap.root_daum_roughmap_landing {
+                            .wrap_map {
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .page-background-box {
+            display: none;
         }
     }
 }
